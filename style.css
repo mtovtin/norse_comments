@@ -1,0 +1,293 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+::placeholder {
+  font-size: 16px;
+  color: grey;
+  text-align: left;
+
+  position: relative;
+}
+
+body {
+  background-color: hsl(223, 19%, 93%);
+}
+
+#main {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+.finishedComment {
+  background-color: white;
+  width: 47vw;
+  min-height: 130px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  border-radius: 8px;
+  min-width: 375px;
+}
+
+.commentLike {
+  width: 40px;
+  height: 80px;
+  border-radius: 8px;
+  border: 0;
+  margin-right: 20px;
+  background-color: hsl(223, 19%, 93%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.commentLikeSpan {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.commentLikeCounter {
+  color: hsl(238, 40%, 52%);
+  display: inline-block;
+  margin: 10px 0 15px 0;
+  font-size: 16px;
+}
+
+.commentContent {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.commentHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.commentUser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 10px -10px;
+  width: 250px;
+  justify-content: space-evenly;
+}
+
+.commentAvatar {
+  width: 30px;
+  height: 30px;
+}
+
+.commentDate {
+  color: grey;
+  padding-right: 10px;
+}
+
+.commentText {
+  color: grey;
+  margin-right: 0px;
+  line-height: 20px;
+}
+
+.commentReplyButton {
+  color: hsl(238, 40%, 52%);
+}
+
+.newComment {
+  background-color: white;
+  width: 47vw;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px;
+  border-radius: 8px;
+  min-width: 375px;
+  margin-bottom: 10px;
+}
+
+.currUserAvatar {
+  width: 40px;
+  height: 40px;
+}
+
+.textArea {
+  width: 70%;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid rgb(200, 200, 200);
+  margin: 0 15px;
+}
+
+.addCommButton {
+  width: 20%;
+  border: 0px;
+  border-radius: 8px;
+  width: 90px;
+  font-size: 14px;
+  height: 40px;
+  background-color: hsl(238, 40%, 52%);
+  color: white;
+}
+
+.finishedSubcomment {
+  background-color: white;
+  width: 38vw;
+  min-width: 370px;
+}
+
+.textArea1 {
+  border: 1px solid green;
+  border-radius: 8px;
+  width: 105%;
+  margin-left: 0px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .finished_subcomment {
+    margin-left: 5px;
+  }
+}
+
+.new_comment_user {
+  margin-left: -60px;
+}
+
+.current_username {
+  display: inline-block;
+  margin-left: -20px;
+}
+
+@media screen and (max-width: 600px) {
+  .updateButton {
+    position: relative;
+    padding-left: -200px;
+  }
+
+  .editButton {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .newCommentUser {
+    margin-left: -30px;
+  }
+
+  .currentUsername {
+    display: inline-block;
+    margin-left: -20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+}
+
+#comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+span:hover {
+  cursor: pointer;
+}
+.editButton .deleteButton {
+  cursor: pointer;
+}
